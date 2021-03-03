@@ -3,7 +3,7 @@
   "cli": {
     "defaultCollection": "@nrwl/angular"
   },
-  "defaultProject": "todos",
+  "defaultProject": "appshell",
   "schematics": {
     "@nrwl/angular": {
       "application": {
