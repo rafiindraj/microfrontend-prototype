@@ -1,0 +1,29 @@
+{
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    ".eslintrc.json": "*",
+    "nx.json": "*"
+  },
+  "affected": { "defaultBase": "master" },
+  "npmScope": "myorg",
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
+    }
+  },
+  "projects": {
+    "todos": { "tags": [] },
+    "todos-e2e": { "tags": [], "implicitDependencies": ["todos"] },
+    "api": { "tags": [] },
+    "data": { "tags": [] },
+    "ui": { "tags": [] },
+    "fordos": { "tags": [] },
+    "fordos-e2e": { "tags": [], "implicitDependencies": ["fordos"] },
+    "appshell": { "tags": [] },
+    "appshell-e2e": { "tags": [], "implicitDependencies": ["appshell"] }
+  }
+}
